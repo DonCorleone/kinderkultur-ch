@@ -1,12 +1,14 @@
 .wrapper {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #2C3043;
 
   svg {
     max-height: 100%;
     max-width: 100%;
 
-    background-color: #2C3043;
     .curtain {
       fill: #FDA061;
       opacity: 0.9;
