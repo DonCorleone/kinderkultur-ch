@@ -3,24 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SchlosswochenComponent } from './components/schlosswochen/schlosswochen.component';
-import { HeaderComponent } from './components/header/header.component';
-import { SpielgruppeComponent } from './components/spielgruppe/spielgruppe.component';
-import { FigurentheaterComponent } from './components/figurentheater/figurentheater.component';
+import { HomeComponent } from './components/home/home.component';
+import { SharedModule } from './modules/shared/shared.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SchlosswochenComponent,
-    HeaderComponent,
-    SpielgruppeComponent,
-    FigurentheaterComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, HomeComponent],
+  imports: [BrowserModule, AppRoutingModule, SharedModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

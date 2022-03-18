@@ -6,3 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./spielgruppe.component.scss']
 })
 export class SpielgruppeComponent {}
+
+

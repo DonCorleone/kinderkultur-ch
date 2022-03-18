@@ -3,25 +3,25 @@
   align-items: center;
   flex-direction: column;
   height: 100%;
-  background-color: #fda061;
+  background-color: #FC6057;
 
   svg {
     max-height: 100%;
     max-width: 100%;
-
     .curtain {
-      fill: #cc1233;
+      fill: #CC1233;
       opacity: 0.9;
     }
 
-    .type-font {
-      fill: #cc1233;
+    .svg-type-font {
+      fill: #CC1233;
       opacity: 0.8;
 
       .text-overlap {
-        fill: #fda061;
-        stroke: #cc1233;
+        fill: #FC6057;
+        stroke: #CC1233;
       }
     }
   }
+
 }

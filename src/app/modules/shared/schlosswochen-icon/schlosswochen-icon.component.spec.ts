@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SchlosswochenComponent } from './schlosswochen.component';
+import { SchlosswochenIconComponent } from './schlosswochen-icon.component';
 
-describe('SchlosswochenComponent', () => {
-  let component: SchlosswochenComponent;
-  let fixture: ComponentFixture<SchlosswochenComponent>;
+describe('SchlosswochenIconComponent', () => {
+  let component: SchlosswochenIconComponent;
+  let fixture: ComponentFixture<SchlosswochenIconComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SchlosswochenComponent ]
+      declarations: [ SchlosswochenIconComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SchlosswochenComponent);
+    fixture = TestBed.createComponent(SchlosswochenIconComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
