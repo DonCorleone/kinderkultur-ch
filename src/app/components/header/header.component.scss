@@ -1,4 +1,25 @@
-svg {
-  max-height: 100%;
-  max-width: 100%;
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  svg {
+    max-height: 100%;
+    max-width: 100%;
+
+    background-color: #2C3043;
+    .curtain {
+      fill: #FDA061;
+      opacity: 0.9;
+    }
+
+    .type-font {
+      fill: #2C3043;
+      opacity: 0.8;
+
+      .text-overlap {
+        fill: #1BC1A1;
+        stroke: #CC1233;
+      }
+    }
+  }
 }

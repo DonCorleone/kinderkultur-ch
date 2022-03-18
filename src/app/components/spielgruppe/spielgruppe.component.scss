@@ -1,4 +1,21 @@
 svg {
   max-height: 100%;
   max-width: 100%;
+
+  background-color: #FDA061;
+
+  .curtain {
+    fill: #CC1233;
+    opacity: 0.9;
+  }
+
+  .type-font {
+    fill: #CC1233;
+    opacity: 0.8;
+
+    .text-overlap {
+      fill: #FDA061;
+      stroke: #CC1233;
+    }
+  }
 }

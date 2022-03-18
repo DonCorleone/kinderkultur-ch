@@ -1,15 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-spielgruppe',
   templateUrl: './spielgruppe.component.html',
   styleUrls: ['./spielgruppe.component.scss']
 })
-export class SpielgruppeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class SpielgruppeComponent {}
