@@ -1,21 +1,27 @@
-svg {
-  max-height: 100%;
-  max-width: 100%;
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fda061;
 
-  background-color: #FDA061;
+  svg {
+    max-height: 100%;
+    max-width: 100%;
 
-  .curtain {
-    fill: #CC1233;
-    opacity: 0.9;
-  }
+    .curtain {
+      fill: #cc1233;
+      opacity: 0.9;
+    }
 
-  .type-font {
-    fill: #CC1233;
-    opacity: 0.8;
+    .type-font {
+      fill: #cc1233;
+      opacity: 0.8;
 
-    .text-overlap {
-      fill: #FDA061;
-      stroke: #CC1233;
+      .text-overlap {
+        fill: #fda061;
+        stroke: #cc1233;
+      }
     }
   }
 }

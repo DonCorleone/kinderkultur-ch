@@ -1,20 +1,27 @@
-svg {
-  max-height: 100%;
-  max-width: 100%;
-
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
   background-color: #FC6057;
-  .curtain {
-    fill: #CC1233;
-    opacity: 0.9;
-  }
 
-  .type-font {
-    fill: #CC1233;
-    opacity: 0.8;
+  svg {
+    max-height: 100%;
+    max-width: 100%;
+    .curtain {
+      fill: #CC1233;
+      opacity: 0.9;
+    }
 
-    .text-overlap {
-      fill: #FC6057;
-      stroke: #CC1233;
+    .type-font {
+      fill: #CC1233;
+      opacity: 0.8;
+
+      .text-overlap {
+        fill: #FC6057;
+        stroke: #CC1233;
+      }
     }
   }
+
 }
