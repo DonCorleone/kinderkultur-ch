@@ -1,0 +1,21 @@
+.icon-wrapper {
+  background-color: #fda061;
+  &.module-icon {
+    background-color: green;
+  }
+}
+
+svg {
+  .curtain {
+    fill: #cc1233;
+  }
+
+  .svg-type-font {
+    fill: #cc1233;
+
+    .text-overlap {
+      fill: #fda061;
+      stroke: #cc1233;
+    }
+  }
+}

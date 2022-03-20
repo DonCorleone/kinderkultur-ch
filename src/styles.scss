@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+  svg {
+    max-height: 100%;
+    max-width: 100%;
+    .curtain {
+      opacity: 0.9;
+    }
+    .svg-type-font {
+      opacity: 0.9;
+      .hide-type-font {
+        display: none;
+      }
+    }
+  }
+}
