@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SwiperOptions } from 'swiper';
+import { File as image4File, ImagesService } from 'src/app/services/images.service';
+import { EMPTY, map, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-swiper',
   templateUrl: './swiper.component.html',
   styleUrls: ['./swiper.component.scss'],
 })
-export class SwiperComponent {
+export class SwiperComponent implements OnInit {
   config: SwiperOptions = {
     pagination: {
       el: '.swiper-pagination',
@@ -18,4 +20,11 @@ export class SwiperComponent {
     },
     spaceBetween: 30,
   };
+
+  files$: Observable<image4File[]> = EMPTY;
+
+  constructor(private imageService: ImagesService) {}
+  ngOnInit(): void {
+    this.files$ = this.imageService.getAlbum('2022f').pipe(map((p) => p.files));
+  }
 }
