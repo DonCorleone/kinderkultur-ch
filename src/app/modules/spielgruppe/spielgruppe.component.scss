@@ -1,6 +1,7 @@
+@import '../../../assets/library';
+
 .wrapper {
   height: 15vh;
-  background-color: green !important;
 
   font-family: "Alegreya", minion-pro, serif;
   font-style: normal;
@@ -16,4 +17,8 @@ app-swiper {
   justify-content: center;
   flex-direction: row;
   display: flex;
+}
+
+.container {
+  background-color: $mango !important;
 }

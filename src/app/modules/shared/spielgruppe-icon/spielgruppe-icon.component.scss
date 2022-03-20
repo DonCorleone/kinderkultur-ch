@@ -1,7 +1,9 @@
+@import '../../../../assets/library';
+
 .icon-wrapper {
-  background-color: #fda061;
+  background-color: $mango;
   &.module-icon {
-    background-color: green;
+    background-color: $mango;
   }
 }
 
