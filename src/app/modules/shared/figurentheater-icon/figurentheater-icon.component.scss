@@ -1,29 +1,16 @@
-.wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-
-  background-color: #1BC1A1;
+.icon-wrapper {
+  background-color: #1bc1a1;
   svg {
-    max-height: 100%;
-    max-width: 100%;
     .curtain {
-      fill: #CC1233;
-      opacity: 0.9;
+      fill: #cc1233;
     }
     .svg-type-font {
-      .hide-type-font {
-        display: none;
-      }
-      fill: #CC1233;
-      opacity: 0.8;
+      fill: #cc1233;
 
       .text-overlap {
-        fill: #1BC1A1;
-        stroke: #CC1233;
+        fill: #1bc1a1;
+        stroke: #cc1233;
       }
     }
   }
-
 }

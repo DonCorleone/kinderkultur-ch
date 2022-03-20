@@ -42,3 +42,7 @@ testem.log
 Thumbs.db
 /src/environments/environment.custom.ts
 /.env
+
+# repo stuff
+/src/environments/environment.custom.ts
+.env
