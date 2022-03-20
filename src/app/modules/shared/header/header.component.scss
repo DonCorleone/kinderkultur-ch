@@ -1,27 +1,27 @@
+@import '../../../../assets/library';
+
+/// child css
+:host.spielgruppe-bg-color {
+  .wrapper {
+    background-color: $spielgruppe-bg;
+  }
+}
+
+
 .wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
   height: 100%;
 
-  background-color: #2C3043;
+  background-color: $header-bg;
 
   svg {
     max-width: 100%;
 
-    .curtain {
-      fill: #FDA061;
-      opacity: 0.9;
-    }
-
     .svg-type-font {
       fill: white;
       opacity: 0.8;
-
-      .text-overlap {
-        fill: #1BC1A1;
-        stroke: #CC1233;
-      }
     }
   }
 }

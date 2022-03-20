@@ -1,10 +1,12 @@
+@import '../../../../assets/library';
+
 .wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
   height: 100%;
 
-  background-color: #2C3043;
+  background-color: $header-bg;
 
   #svg-header-image {
     max-height: 27vh;
@@ -14,18 +16,8 @@
     max-width: 100%;
 
     .curtain {
-      fill: #FDA061;
+      fill: $logo-bg;
       opacity: 0.9;
-    }
-
-    .svg-type-font {
-      fill: white;
-      opacity: 0.8;
-
-      .text-overlap {
-        fill: #1BC1A1;
-        stroke: #CC1233;
-      }
     }
   }
 }

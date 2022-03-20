@@ -1,17 +1,20 @@
+@import '../../../../assets/library';
+
 .icon-wrapper {
-  background-color: #FC6057;
+  background-color: $schlosswochen-bg;
 
   svg {
     .curtain {
-      fill: #CC1233;
+      fill: $schlosswochen-icon;
     }
 
     .svg-type-font {
-      fill: #CC1233;
+      fill: $schlosswochen-icon;
+      stroke: $schlosswochen-icon;
 
       .text-overlap {
-        fill: #FC6057;
-        stroke: #CC1233;
+        fill: $schlosswochen-bg;
+        stroke: $schlosswochen-icon;
       }
     }
   }

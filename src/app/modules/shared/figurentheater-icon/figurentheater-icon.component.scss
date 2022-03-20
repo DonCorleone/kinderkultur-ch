@@ -1,15 +1,18 @@
+@import '../../../../assets/library';
+
 .icon-wrapper {
-  background-color: #1bc1a1;
+  background-color: $figurentheater-bg;
   svg {
     .curtain {
-      fill: #cc1233;
+      fill: $figurentheater-icon;
     }
     .svg-type-font {
-      fill: #cc1233;
+      fill: $figurentheater-icon;
+      stroke: $figurentheater-icon-stroke;
 
       .text-overlap {
-        fill: #1bc1a1;
-        stroke: #cc1233;
+        fill: $figurentheater-bg;
+        stroke: $figurentheater-icon-stroke;
       }
     }
   }
