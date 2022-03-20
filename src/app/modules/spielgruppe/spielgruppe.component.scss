@@ -2,10 +2,17 @@
   height: 15vh;
   background-color: green !important;
 
+  font-family: "Alegreya", minion-pro, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+  span.avoidwrap {
+    display: inline-block;
+  }
 }
 
 app-swiper {
-
   justify-content: center;
   flex-direction: row;
   display: flex;
