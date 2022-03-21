@@ -1,7 +1,6 @@
-@import '../../../assets/library';
+@import "../../../assets/library";
 
-.wrapper {
-
+.spielgruppe-wrapper {
   background-color: $spielgruppe-bg;
 
   font-family: "Alegreya", minion-pro, serif;
@@ -9,8 +8,47 @@
   font-weight: 400;
   font-size: 1.5rem;
 
-  span.avoidwrap {
-    display: inline-block;
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-rows: 120px 120px auto;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "grid-header grid-header grid-header"
+    "grid-logo-left grid-logo grid-logo-right"
+    "grid-body-left grid-body grid-body-right";
+
+    span.avoidwrap {
+      display: inline-block;
+    }
+  }
+
+  .grid-logo-left {
+    grid-area: grid-logo-left;
+  }
+
+  .grid-logo {
+    grid-area: grid-logo;
+  }
+
+  .grid-logo-right {
+    grid-area: grid-logo-right;
+  }
+
+  .grid-header {
+    grid-area: grid-header;
+  }
+
+  .grid-body-left {
+    grid-area: grid-body-left;
+  }
+
+  .grid-body {
+    grid-area: grid-body;
+  }
+
+  .grid-body-right {
+    grid-area: grid-body-right;
   }
 }
-
