@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { SpielgruppeComponent } from './spielgruppe.component';
 import { SpielgruppeInfoComponent } from './spielgruppe-info/spielgruppe-info.component';
 import { SpielgruppeOverviewComponent } from './spielgruppe-overview/spielgruppe-overview.component';
+import { SpielgruppeAgbComponent } from './spielgruppe-agb/spielgruppe-agb.component';
+import { SpielgruppeLeitungComponent } from './spielgruppe-leitung/spielgruppe-leitung.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
       {
         path: 'info',
         component: SpielgruppeInfoComponent, // another child route component that the router renders
+      },
+      {
+        path: 'agb',
+        component: SpielgruppeAgbComponent, // another child route component that the router renders
+      },
+      {
+        path: 'leitung',
+        component: SpielgruppeLeitungComponent, // another child route component that the router renders
       },
     ],
   },
