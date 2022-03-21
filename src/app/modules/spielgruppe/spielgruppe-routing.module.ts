@@ -1,11 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SpielgruppeComponent } from './spielgruppe.component';
+import { SpielgruppeInfoComponent } from './spielgruppe-info/spielgruppe-info.component';
+import { SpielgruppeOverviewComponent } from './spielgruppe-overview/spielgruppe-overview.component';
 
-const routes: Routes = [{ path: '', component: SpielgruppeComponent }];
+const routes: Routes = [
+  {
+    path: '',
+    component: SpielgruppeComponent, // this is the component with the <router-outlet> in the template
+    children: [
+      {
+        path: '', // child route path
+        component: SpielgruppeOverviewComponent, // child route component that the router renders
+      },
+      {
+        path: 'info',
+        component: SpielgruppeInfoComponent, // another child route component that the router renders
+      },
+    ],
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class SpielgruppeRoutingModule { }
+export class SpielgruppeRoutingModule {}
