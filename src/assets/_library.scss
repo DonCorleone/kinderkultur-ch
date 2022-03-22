@@ -1,3 +1,18 @@
+@function cmyk($c, $m, $y, $k) {
+
+  $c: $c / 100;
+  $m: $m / 100;
+  $y: $y / 100;
+  $k: $k / 100;
+
+  $r: 255 * (1 - $c) * (1 - $k);
+  $g: 255 * (1 - $m) * (1 - $k);
+  $b: 255 * (1 - $y) * (1 - $k);
+
+  @return rgb($r, $g, $b);
+
+}
+
 $mango: #fda061;
 $orange: #fc6057;
 $babyblue: #1bc1a1;
@@ -22,18 +37,50 @@ $svg-text-173438: #173438;
 $svg-text-50B14F: #50b14f;
 $svg-text-5A9C36: #5a9c36;
 
-$logo-bg: $mango;
-$header-bg: $slate;
+$pale-lemon-yellow: cmyk(0, 4, 38, 0);
+$cobalt-green:  cmyk(42, 0, 42, 0);
+$benzon-green:  cmyk(100, 15, 55, 0);
+$antwarp-blue:  cmyk(100, 40, 30, 10);
 
-$spielgruppe-bg: $mango;
-$schlosswochen-bg: $orange;
-$figurentheater-bg: $babyblue;
+$rouge-carmin:rgb(143, 58, 67);
+$rose-clair: rgb(214, 175, 166);
+$bleu-outremer-31: rgb(77, 106, 168);
+$bleu-cerelueen-31: rgb(62, 110, 144);
+$blanc: rgb(234, 219, 192);
+$gris-31: rgb(146, 148, 148);
+$gris-clair-31: rgb(188, 187, 182);
+$rouge-vermillont: rgb(155, 55, 56);
+$rouge-rubia: rgb(148, 58, 77);
+$vert-31: rgb(127, 162, 90);
+$vert-clair: rgb(171, 193, 122);
+$vert-fonce: rgb(62, 111, 66);
+$vert-anglais: rgb(64, 110, 88);
+$vert-anglais-claire: rgb(145, 175, 161);
+$vert-anglais-pale: rgb(190, 203, 183);
+$vert-jaune-clair: rgb(196, 211, 155);
+$ocre-rouge-moyen: rgb(205, 152, 134);
+$ocre-rouge-claire: rgb(219, 190, 170);
+$ocre-rouge: rgb(139, 77, 62);
+$terre-ombre-brule: rgb(76, 66, 61);
+$terre-sienne-claire: rgb(216, 178, 154);
+$terre-sienne-brique: rgb(182, 123, 102);
+$terre-sienne-brule: rgb(104, 68, 60);
+$ombre-naturelle-clair: rgb(90, 85, 80);
+$ombre-brule-clair: rgb(183, 163, 146);
+$orange-clair: rgb(220, 141, 103);
+$orange-pale: rgb(234, 207, 185);
 
-$spielgruppe-icon: $purple;
-$spielgruppe-icon-stroke: $purple-dark;
+$logo-bg: $bleu-cerelueen-31;
+$header-bg: $terre-sienne-brule;
 
-$schlosswochen-icon: $purple;
-$schlosswochen-icon-stroke: $purple-dark;
+$figurentheater-bg: $blanc;
+$figurentheater-icon: $rouge-vermillont;
+$figurentheater-icon-stroke: $rouge-vermillont;
 
-$figurentheater-icon: $purple;
-$figurentheater-icon-stroke: $purple-dark;
+$schlosswochen-bg: $gris-clair-31;
+$schlosswochen-icon: $bleu-cerelueen-31;
+$schlosswochen-icon-stroke: $bleu-cerelueen-31;
+
+$spielgruppe-bg: $terre-sienne-brique;
+$spielgruppe-icon: $blanc;
+$spielgruppe-icon-stroke: $blanc;

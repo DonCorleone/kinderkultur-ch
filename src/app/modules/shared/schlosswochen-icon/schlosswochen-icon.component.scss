@@ -10,11 +10,11 @@
 
     .svg-type-font {
       fill: $schlosswochen-icon;
-      stroke: $schlosswochen-icon;
+      stroke: $schlosswochen-icon-stroke;
 
       .text-overlap {
         fill: $schlosswochen-bg;
-        stroke: $schlosswochen-icon;
+        stroke: $schlosswochen-icon-stroke;
       }
     }
   }
