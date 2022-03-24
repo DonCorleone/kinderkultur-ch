@@ -4,17 +4,22 @@
       <a routerLink="/"> <app-header [isSpielgruppe]="true"></app-header></a>
     </div>
     <div class="grid-logo-left">
-      <a routerLink="/spielgruppe">
-        <app-back-icon></app-back-icon>
-      </a>
     </div>
     <div class="grid-logo">
-      <a routerLink="/spielgruppe">
-        <app-spielgruppe-icon
-          [hideTypeFont]="true"
-          [isModuleIcon]="true"
-        ></app-spielgruppe-icon
-      ></a>
+      <div class="back-icon">
+        <a href="javascript:void(0)" (click)="back()">
+          <app-back-icon></app-back-icon>
+        </a>
+      </div>
+      <div class="spielgruppe-icon">
+        <a routerLink="/spielgruppe">
+          <app-spielgruppe-icon
+            [hideTypeFont]="true"
+            [isModuleIcon]="true"
+          ></app-spielgruppe-icon
+          ></a>
+      </div>
+
     </div>
     <div class="grid-logo-right"></div>
 
