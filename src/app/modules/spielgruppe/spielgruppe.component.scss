@@ -22,6 +22,12 @@
     }
   }
 
+  app-back-icon {
+    .icon-wrapper {
+      height: 100%;
+    }
+  }
+
   @media only screen and (min-width: 1001px) {
     .grid-container {
       grid-template-columns: 1fr 800px 1fr;
@@ -44,6 +50,7 @@
   }
   .grid-logo-left {
     grid-area: grid-logo-left;
+
   }
 
   .grid-logo {

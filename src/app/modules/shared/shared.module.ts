@@ -9,6 +9,7 @@ import { SwiperComponent } from './swiper/swiper.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { ImagesService } from '../../services/images.service';
 import { HttpClientModule } from '@angular/common/http';
+import { BackIconComponent } from './back-icon/back-icon.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     LogoComponent,
     SwiperComponent,
+    BackIconComponent,
   ],
   imports: [CommonModule, NgxUsefulSwiperModule, HttpClientModule],
   exports: [
@@ -28,6 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
     LogoComponent,
     NgxUsefulSwiperModule,
     SwiperComponent,
+    BackIconComponent,
   ],
 })
 export class SharedModule {}
