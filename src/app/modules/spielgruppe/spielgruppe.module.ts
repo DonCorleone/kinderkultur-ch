@@ -6,11 +6,10 @@ import { SpielgruppeComponent } from './spielgruppe.component';
 import { SharedModule } from '../shared/shared.module';
 import { SpielgruppeInfoComponent } from './spielgruppe-info/spielgruppe-info.component';
 import { SpielgruppeOverviewComponent } from './spielgruppe-overview/spielgruppe-overview.component';
-import { SpielgruppeAgbComponent } from './spielgruppe-agb/spielgruppe-agb.component';
 import { SpielgruppeLeitungComponent } from './spielgruppe-leitung/spielgruppe-leitung.component';
 
 @NgModule({
-  declarations: [SpielgruppeComponent, SpielgruppeInfoComponent, SpielgruppeOverviewComponent, SpielgruppeAgbComponent, SpielgruppeLeitungComponent],
+  declarations: [SpielgruppeComponent, SpielgruppeInfoComponent, SpielgruppeOverviewComponent, SpielgruppeLeitungComponent],
   imports: [CommonModule, SpielgruppeRoutingModule, SharedModule],
 })
 export class SpielgruppeModule {}
