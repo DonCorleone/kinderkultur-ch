@@ -6,12 +6,12 @@
     <div class="grid-logo-left">
     </div>
     <div class="grid-logo">
-      <div class="back-icon">
+      <div class="grid-logo-back" >
         <a href="javascript:void(0)" (click)="back()">
-          <app-back-icon></app-back-icon>
+          <app-back-icon [isSpielgruppe]="true"></app-back-icon>
         </a>
       </div>
-      <div class="spielgruppe-icon">
+      <div class="grid-logo-spielgruppen" >
         <a routerLink="/spielgruppe">
           <app-spielgruppe-icon
             [hideTypeFont]="true"
@@ -19,7 +19,7 @@
           ></app-spielgruppe-icon
           ></a>
       </div>
-
+      <div class="grid-logo-niente"></div>
     </div>
     <div class="grid-logo-right"></div>
 

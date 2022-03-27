@@ -23,24 +23,36 @@
   }
 
 
-  @media only screen and (min-width: 1001px) {
+  @media only screen and (min-width: 992px) {
     .grid-container {
       grid-template-columns: 1fr 800px 1fr;
       grid-template-rows: 120px 120px auto;
+
+      .grid-logo-back {
+        margin-top: 40px;
+      }
     }
   }
 
-  @media only screen and (min-width: 377px) and (max-width: 1000px) {
+  @media only screen and (min-width: 576px) and (max-width: 991px) {
     .grid-container {
       grid-template-columns: 1fr 600px 1fr;
       grid-template-rows: 60px 60px auto;
+
+      .grid-logo-back {
+        margin-top: 30px;
+      }
     }
   }
 
-  @media only screen and (max-width: 376px) {
+  @media only screen and (max-width: 575px) {
     .grid-container {
       grid-template-columns: 1fr 366px 1fr;
       grid-template-rows: 60px 60px auto;
+
+      .grid-logo-back {
+        margin-top: 40px;
+      }
     }
   }
   .grid-logo-left {
@@ -54,9 +66,25 @@
     flex-direction: row;
     justify-content: space-between;
 
-    .spielgruppe-icon, .back-icon {
-      width: 100%;
-    }
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "grid-logo-back grid-logo-spielgruppe grid-logo-niente";
+  }
+
+  .grid-logo-back {
+    grid-area: grid-logo-back;
+    width: 100%;
+  }
+
+  .grid-logo-spielgruppen {
+    grid-area: grid-logo-spielgruppe;
+    width: 100%;
+  }
+
+  .grid-logo-niente {
+    grid-area: grid-logo-niente;
+    width: 100%;
   }
 
   .grid-logo-right {
