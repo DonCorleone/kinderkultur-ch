@@ -1,0 +1,78 @@
+@import "../../../../assets/library";
+
+/// child css
+:host.spielgruppe-bg-color {
+  .wrapper {
+    background-color: $spielgruppe-bg;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+  background-color: $header-bg;
+
+  svg {
+    max-width: 100%;
+
+    .svg-type-font {
+      fill: white;
+    }
+
+    .svg-text-173438 {
+      fill: $svg-text-173438;
+    }
+    .svg-text-4CAB27 {
+      fill: $svg-text-4CAB27;
+    }
+    .svg-text-D388C1 {
+      fill: $svg-text-D388C1;
+    }
+    .svg-text-AC002E {
+      fill: $svg-text-AC002E;
+    }
+    .svg-text-F31C80 {
+      fill: $svg-text-F31C80;
+    }
+    .svg-text-5A9C36 {
+      fill: $svg-text-5A9C36;
+    }
+    .svg-text-FE230B {
+      fill: $svg-text-FE230B;
+    }
+    .svg-text-C12D93 {
+      fill: $svg-text-C12D93;
+    }
+
+    .svg-text-42238C {
+      fill: $svg-text-42238C;
+    }
+
+    .svg-text-52AE26 {
+      fill: $svg-text-52AE26;
+    }
+
+    .svg-text-3E97A9 {
+      fill: $svg-text-3E97A9;
+    }
+
+    .svg-text-2A3796 {
+      fill: $svg-text-2A3796;
+    }
+
+    .svg-text-173438 {
+      fill: $svg-text-173438;
+    }
+
+    .svg-text-50B14F {
+      fill: $svg-text-50B14F;
+    }
+
+    .svg-text-5A9C36 {
+      fill: $svg-text-5A9C36;
+    }
+  }
+}

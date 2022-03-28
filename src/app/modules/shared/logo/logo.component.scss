@@ -1,0 +1,22 @@
+@import '../../../../assets/library';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+  background-color: $header-bg;
+
+  #svg-header-image {
+    max-height: 27vh;
+  }
+
+  svg {
+    max-width: 100%;
+
+    .curtain {
+      fill: $logo-bg;
+    }
+  }
+}

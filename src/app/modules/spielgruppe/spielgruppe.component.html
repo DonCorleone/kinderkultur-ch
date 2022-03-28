@@ -1,0 +1,40 @@
+<div class="spielgruppe-wrapper">
+  <div class="grid-container">
+    <div class="grid-header">
+      <a routerLink="/"> <app-header [isSpielgruppe]="true"></app-header></a>
+    </div>
+    <div class="grid-logo-left">
+    </div>
+    <div class="grid-logo">
+      <div class="grid-logo-back" >
+        <a href="javascript:void(0)" (click)="back()">
+          <app-back-icon [isSpielgruppe]="true"></app-back-icon>
+        </a>
+      </div>
+      <div class="grid-logo-spielgruppen" >
+        <a routerLink="/spielgruppe">
+          <app-spielgruppe-icon
+            [hideTypeFont]="true"
+            [isModuleIcon]="true"
+          ></app-spielgruppe-icon
+          ></a>
+      </div>
+      <div class="grid-logo-niente"></div>
+    </div>
+    <div class="grid-logo-right"></div>
+
+    <div class="grid-body-left"></div>
+    <div class="grid-body">
+      <a routerLink="/spielgruppe">
+        <h1>
+          <span class="avoidwrap">NATUR</span
+          ><span class="avoidwrap">SPIEL</span
+          ><span class="avoidwrap">GRUPPE</span>
+        </h1></a
+      >
+      <router-outlet></router-outlet>
+    </div>
+    <div class="grid-body-right"></div>
+    <div class="grid-footer"></div>
+  </div>
+</div>

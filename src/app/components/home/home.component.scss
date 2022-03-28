@@ -1,0 +1,97 @@
+@import "../../../assets/library";
+
+.home-wrapper {
+  background-color: $header-bg;
+}
+
+.grid-container {
+
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". grid-header ."
+    ". grid-logo ."
+    ". grid-icons .";
+}
+
+@media only screen and (min-width: 992px) {
+  .grid-container {
+    height: 100vh;
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-rows: 120px 100px auto;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .grid-container {
+    height: 100vh;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-rows: 60px 60px auto;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .grid-container {
+    grid-template-columns: 1fr 366px 1fr;
+    grid-template-rows: 60px 60px auto;
+  }
+}
+
+.grid-header {
+  grid-area: grid-header;
+}
+
+.grid-logo {
+  grid-area: grid-logo;
+}
+
+.grid-icons {
+  grid-area: grid-icons;
+
+  background-color: $header-bg;
+  display: grid;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+}
+
+@media only screen and (min-width: 992px) {
+  .grid-icons {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px auto;
+    grid-template-areas:
+      "grid-icon-figurentheater grid-icon-schlosswochen grid-icon-spielgruppe"
+      ". . .";
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .grid-icons {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px auto;
+    grid-template-areas:
+      ". grid-icon-figurentheater grid-icon-figurentheater grid-icon-schlosswochen grid-icon-schlosswochen ."
+      ". . grid-icon-spielgruppe grid-icon-spielgruppe . ."
+      ". . . . . .";
+  }
+}
+@media only screen and (max-width: 575px) {
+  .grid-icons {
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 30px;
+    grid-template-areas:
+      ". grid-icon-figurentheater ."
+      ". grid-icon-schlosswochen ."
+      ". grid-icon-spielgruppe .";
+  }
+}
+.grid-icon-figurentheater {
+  grid-area: grid-icon-figurentheater;
+}
+
+.grid-icon-schlosswochen {
+  grid-area: grid-icon-schlosswochen;
+}
+
+.grid-icon-spielgruppe {
+  grid-area: grid-icon-spielgruppe;
+}

@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@600;800&display=swap');
 
+@import "./assets/library";
+
+body {
+  margin: unset;
+}
 .icon-wrapper {
   display: flex;
   align-items: center;
@@ -10,13 +16,12 @@
     max-height: 100%;
     max-width: 100%;
     .curtain {
-      opacity: 0.9;
     }
     .svg-type-font {
-      opacity: 0.9;
-      .hide-type-font {
-        display: none;
-      }
+    }
+
+    .hide-type-font {
+      display: none;
     }
   }
 }

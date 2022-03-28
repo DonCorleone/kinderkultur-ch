@@ -1,0 +1,16 @@
+table {
+  //table-layout: auto;
+  //width: 100%;
+  font-size: smaller;
+}
+th[scope="row"] {
+  white-space: nowrap;
+  text-align: right;
+  vertical-align: baseline;
+  -webkit-box-align: baseline;
+}
+
+td {
+  padding-left: 1rem;
+  white-space: break-spaces;
+}

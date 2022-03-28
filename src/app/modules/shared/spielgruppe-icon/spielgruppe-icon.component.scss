@@ -1,21 +1,24 @@
+@import '../../../../assets/library';
+
 .icon-wrapper {
-  background-color: #fda061;
+  background-color: $spielgruppe-bg;
   &.module-icon {
-    background-color: green;
+    background-color: $spielgruppe-bg;
   }
 }
 
 svg {
   .curtain {
-    fill: #cc1233;
+    fill: $spielgruppe-icon;
   }
 
   .svg-type-font {
-    fill: #cc1233;
+    fill: $spielgruppe-icon;
+    stroke: $spielgruppe-icon;
 
     .text-overlap {
-      fill: #fda061;
-      stroke: #cc1233;
+      fill: $spielgruppe-bg;
+      stroke: $spielgruppe-bg;
     }
   }
 }

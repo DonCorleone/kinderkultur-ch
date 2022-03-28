@@ -1,0 +1,14 @@
+<swiper [config]="config">
+  <div class="swiper-wrapper" *ngIf="(files$ | async) as files">
+    <ng-container *ngFor="let file of files">
+      <div class="swiper-slide">
+        <img [src]="'https://cdn.image4.io/petruschka' + file.name" width="100%" [alt]="file.name" />
+      </div>
+    </ng-container>
+   </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</swiper>
