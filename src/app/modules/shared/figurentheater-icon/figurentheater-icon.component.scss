@@ -1,7 +1,7 @@
 @import '../../../../assets/library';
 
 .icon-wrapper {
-  background-color: $figurentheater-bg;
+  background-color: $figurentheater-icon-bg;
   svg {
     .curtain {
       fill: $figurentheater-icon;
@@ -11,8 +11,8 @@
       stroke: $figurentheater-icon-stroke;
 
       .text-overlap {
-        fill: $figurentheater-bg;
-        stroke: $figurentheater-bg;
+        fill: $figurentheater-icon-bg;
+        stroke: $figurentheater-icon-bg;
       }
     }
   }

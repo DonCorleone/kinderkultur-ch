@@ -1,9 +1,9 @@
 @import '../../../../assets/library';
 
 .icon-wrapper {
-  background-color: $spielgruppe-bg;
+  background-color: $spielgruppe-icon-bg;
   &.module-icon {
-    background-color: $spielgruppe-bg;
+  //  background-color: $spielgruppe-icon-bg;
   }
 }
 
@@ -17,8 +17,8 @@ svg {
     stroke: $spielgruppe-icon;
 
     .text-overlap {
-      fill: $spielgruppe-bg;
-      stroke: $spielgruppe-bg;
+      fill: $spielgruppe-icon-bg;
+      stroke: $spielgruppe-icon-bg;
     }
   }
 }

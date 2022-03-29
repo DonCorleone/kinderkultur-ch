@@ -3,7 +3,7 @@
 /// child css
 :host.spielgruppe-bg-color {
   .wrapper {
-    background-color: $spielgruppe-bg;
+ //   background-color: $spielgruppe-icon-bg;
   }
 }
 
@@ -13,7 +13,7 @@
   flex-direction: column;
   height: 100%;
 
-  background-color: $header-bg;
+  // background-color: $header-bg;
 
   svg {
     max-width: 100%;

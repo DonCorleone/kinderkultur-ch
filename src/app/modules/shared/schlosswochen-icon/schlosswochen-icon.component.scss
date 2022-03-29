@@ -1,7 +1,7 @@
 @import '../../../../assets/library';
 
 .icon-wrapper {
-  background-color: $schlosswochen-bg;
+  background-color: $schlosswochen-icon-bg;
 
   svg {
     .curtain {
@@ -13,7 +13,7 @@
       stroke: $schlosswochen-icon-stroke;
 
       .text-overlap {
-        fill: $schlosswochen-bg;
+        fill: $schlosswochen-icon-bg;
         stroke: $schlosswochen-icon-stroke;
       }
     }
