@@ -1,32 +1,13 @@
-$mango: #fda061;
+/*$mango: #fda061;
 $orange: #fc6057;
 $babyblue: #1bc1a1;
 $slate: #2c3043;
 
 $purple: #cc1233;
-$purple-dark: #960f27;
+$purple-dark: #960f27;*/
 
-$svg-text-173438: #173438;
-$svg-text-4CAB27: #4cab27;
-$svg-text-D388C1: #d388c1;
-$svg-text-AC002E: #ac002e;
-$svg-text-F31C80: #f31c80;
-$svg-text-5A9C36: #5a9c36;
-$svg-text-FE230B: #fe230b;
-$svg-text-C12D93: #c12d93;
-$svg-text-42238C: #42238c;
-$svg-text-52AE26: #52ae26;
-$svg-text-3E97A9: #3e97a9;
-$svg-text-2A3796: #2a3796;
-$svg-text-173438: #173438;
-$svg-text-50B14F: #50b14f;
-$svg-text-5A9C36: #5a9c36;
 
-$pale-lemon-yellow: cmyk(0, 4, 38, 0);
-$cobalt-green:  cmyk(42, 0, 42, 0);
-$benzon-green:  cmyk(100, 15, 55, 0);
-$antwarp-blue:  cmyk(100, 40, 30, 10);
-
+$gris-fonce: rgb(94, 96, 97);
 $rouge-carmin:rgb(143, 58, 67);
 $rose-clair: rgb(214, 175, 166);
 $bleu-outremer-31: rgb(77, 106, 168);
@@ -34,6 +15,7 @@ $bleu-cerelueen-31: rgb(62, 110, 144);
 $blanc: rgb(234, 219, 192);
 $gris-31: rgb(146, 148, 148);
 $gris-clair-31: rgb(188, 187, 182);
+$gris-fonce: rgb(94, 96, 97);
 $rouge-vermillont: rgb(155, 55, 56);
 $rouge-rubia: rgb(148, 58, 77);
 $vert-31: rgb(127, 162, 90);
@@ -48,24 +30,49 @@ $ocre-rouge-claire: rgb(219, 190, 170);
 $ocre-rouge: rgb(139, 77, 62);
 $terre-ombre-brule: rgb(76, 66, 61);
 $terre-sienne-claire: rgb(216, 178, 154);
+$terre-sienne-claire-31: rgb(219, 190, 170);
 $terre-sienne-brique: rgb(182, 123, 102);
 $terre-sienne-brule: rgb(104, 68, 60);
+$terre-sienne-31: rgb(261, 178, 154);
 $ombre-naturelle-clair: rgb(90, 85, 80);
 $ombre-brule-clair: rgb(183, 163, 146);
 $orange-clair: rgb(220, 141, 103);
+
 $orange-pale: rgb(234, 207, 185);
+$ceruleen-moyen: rgb(138, 181, 186);
+$rose-pale: rgb(230, 205, 191);
+$bleu-ceruleen-pale: rgb(198, 213, 204);
+$ceruleen-clair: rgb(168, 196, 193);
+$outremer-pale: rgb(182, 198, 206);
+$outremer-moyen: rgb(143, 171, 201);
+$outremer-clair: rgb(171, 189, 200);
 
-$logo-bg: $bleu-cerelueen-31;
-$header-bg: $terre-sienne-brule;
+$svg-text-173438: $vert-anglais-claire;
+$svg-text-4CAB27: $vert-anglais-pale;
+$svg-text-D388C1: $ocre-rouge-claire;
+$svg-text-AC002E: $ocre-rouge-moyen;
+$svg-text-F31C80: $vert-anglais-pale;
+$svg-text-5A9C36: $terre-sienne-brique;
+$svg-text-FE230B: $vert-anglais-pale;
+$svg-text-C12D93: $vert-anglais-claire;
+$svg-text-42238C: $ombre-brule-clair;
+$svg-text-52AE26: $terre-sienne-claire-31;
+$svg-text-3E97A9: $vert-anglais-claire;
+$svg-text-2A3796: $orange-pale;
+$svg-text-50B14F: $vert-jaune-clair;
 
-$figurentheater-bg: $blanc;
-$figurentheater-icon: $rouge-vermillont;
-$figurentheater-icon-stroke: $rouge-vermillont;
 
-$schlosswochen-bg: $gris-clair-31;
-$schlosswochen-icon: $bleu-cerelueen-31;
-$schlosswochen-icon-stroke: $bleu-cerelueen-31;
+$logo-bg: $ceruleen-moyen; // $terre-sienne-claire;
+$header-bg: $bleu-cerelueen-31;
 
-$spielgruppe-bg: $blanc;
-$spielgruppe-icon: $terre-sienne-brique;
-$spielgruppe-icon-stroke: $terre-sienne-brique;;
+$figurentheater-bg: $ceruleen-moyen;
+$figurentheater-icon: $rouge-rubia;
+$figurentheater-icon-stroke: $rouge-rubia;
+
+$schlosswochen-bg: $rouge-rubia;
+$schlosswochen-icon: $ceruleen-moyen;
+$schlosswochen-icon-stroke: $ceruleen-moyen;
+
+$spielgruppe-bg: $ceruleen-moyen;
+$spielgruppe-icon: $rouge-rubia;
+$spielgruppe-icon-stroke: $rouge-rubia;
