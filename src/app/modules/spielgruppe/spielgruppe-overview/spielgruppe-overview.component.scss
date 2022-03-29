@@ -1,5 +1,15 @@
 @import '../../../../assets/library';
 
+a {
+  color: $rouge-rubia;
+}
+a:visited:hover {
+  color: $vert-anglais;
+}
+a:visited {
+  color: $rouge-rubia;
+}
+
 app-swiper {
   justify-content: center;
   flex-direction: row;
