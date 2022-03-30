@@ -5,11 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './spielgruppe-ort.component.html',
   styleUrls: ['./spielgruppe-ort.component.scss']
 })
-export class SpielgruppeOrtComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class SpielgruppeOrtComponent {}

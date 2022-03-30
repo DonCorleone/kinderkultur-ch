@@ -1,6 +1,10 @@
 @import '../../../../assets/library';
+
 a {
   color: $rouge-rubia;
+}
+a:hover {
+  color: $vert-anglais;
 }
 a:visited:hover {
   color: $vert-anglais;
@@ -9,9 +13,16 @@ a:visited {
   color: $rouge-rubia;
 }
 
+img {
+  width: 100%;
+  max-width: 300px;
+  filter: brightness(80%);
+}
+
 table {
   font-size: smaller;
 }
+
 th[scope="row"] {
   white-space: nowrap;
   text-align: right;

@@ -1,6 +1,10 @@
 @import '../../../../assets/library';
+
 a {
   color: $rouge-rubia;
+}
+a:hover {
+  color: $vert-anglais;
 }
 a:visited:hover {
   color: $vert-anglais;
