@@ -59,7 +59,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 250px auto;
     grid-template-areas:
-      "grid-icon-figurentheater grid-icon-schlosswochen grid-icon-spielgruppe"
+      "grid-icon-spielgruppe grid-icon-schlosswochen grid-icon-figurentheater"
       ". . .";
   }
 }
@@ -69,8 +69,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 200px auto;
     grid-template-areas:
-      ". grid-icon-figurentheater grid-icon-figurentheater grid-icon-schlosswochen grid-icon-schlosswochen ."
-      ". . grid-icon-spielgruppe grid-icon-spielgruppe . ."
+      ". grid-icon-spielgruppe grid-icon-spielgruppe grid-icon-schlosswochen grid-icon-schlosswochen ."
+      ". . grid-icon-figurentheater grid-icon-figurentheater . ."
       ". . . . . .";
   }
 }
@@ -79,9 +79,9 @@
     grid-template-columns: 1fr 300px 1fr;
     grid-template-rows: 1fr 1fr 1fr 30px;
     grid-template-areas:
-      ". grid-icon-figurentheater ."
+      ". grid-icon-spielgruppe ."
       ". grid-icon-schlosswochen ."
-      ". grid-icon-spielgruppe .";
+      ". grid-icon-figurentheater .";
   }
 }
 .grid-icon-figurentheater {
