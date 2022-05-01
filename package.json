@@ -7,7 +7,9 @@
     "start": "npm run config --environment=develop && ng serve --configuration=custom",
     "build": "npm run config --environment=prod && ng build --configuration=custom",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "scully": "npx scully --",
+    "scully:serve": "npx scully serve --"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +21,9 @@
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
+    "@scullyio/ng-lib": "^2.1.0",
+    "@scullyio/scully": "^2.1.0",
+    "@scullyio/scully-plugin-puppeteer": "^2.1.0",
     "ngx-useful-swiper": "^10.0.1",
     "rxjs": "~7.4.0",
     "swiper": "^6.8.4",
