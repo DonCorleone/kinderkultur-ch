@@ -25,6 +25,6 @@ export class SwiperComponent implements OnInit {
 
   constructor(private imageService: ImagesService) {}
   ngOnInit(): void {
-    this.files$ = this.imageService.getAlbum('spielgruppe-carousel').pipe(map((p) => p.files));
+    this.files$ = this.imageService.getAlbum('spielgruppe-carousel')?.pipe(map((p) => p.files));
   }
 }
