@@ -10,7 +10,13 @@ import { SpielgruppeLeitungComponent } from './spielgruppe-leitung/spielgruppe-l
 import { SpielgruppeOrtComponent } from './spielgruppe-ort/spielgruppe-ort.component';
 
 @NgModule({
-  declarations: [SpielgruppeComponent, SpielgruppeInfoComponent, SpielgruppeOverviewComponent, SpielgruppeLeitungComponent, SpielgruppeOrtComponent],
+  declarations: [
+    SpielgruppeComponent,
+    SpielgruppeInfoComponent,
+    SpielgruppeOverviewComponent,
+    SpielgruppeLeitungComponent,
+    SpielgruppeOrtComponent,
+  ],
   imports: [CommonModule, SpielgruppeRoutingModule, SharedModule],
 })
 export class SpielgruppeModule {}
