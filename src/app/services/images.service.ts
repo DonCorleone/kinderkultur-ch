@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import {map, Observable} from 'rxjs';
 import { environment } from '../../environments/environment';
 
 @Injectable({
@@ -27,7 +27,34 @@ export class ImagesService {
       httpOptions
     );
   }
+
+  listAssets(): Observable<Netlifile[]>{
+    // console.log(`getAlbum`);
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        Authorization:
+          `Bearer 7i8G94iKSRAr9C2Fi7NgS3oOHxHNxq6DOwErgxRObKQ`,
+      }),
+    };
+
+    return this.http.get<Netlifile[]>(
+      'https://api.netlify.com/api/v1' + `/sites/3cb99734-59d3-4f02-aa78-2fc00e43822a/files/`,
+      httpOptions
+    ).pipe(map(p => p.filter(f => f.path.startsWith('/assets/carousel'))));
+  }
 }
+
+export interface Netlifile {
+  id: string;
+  path: string;
+  sha: string;
+  mime_type: string;
+  size: number;
+  site_id: string;
+  deploy_id: string;
+}
+
 
 export interface File {
   folder: string;

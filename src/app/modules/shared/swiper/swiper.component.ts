@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SwiperOptions } from 'swiper';
-import { File as image4File, ImagesService } from 'src/app/services/images.service';
-import { EMPTY, map, Observable } from 'rxjs';
+import {File as image4File, ImagesService, Netlifile} from 'src/app/services/images.service';
+import {EMPTY, map, Observable, Subject, takeUntil} from 'rxjs';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-swiper',
@@ -21,10 +22,39 @@ export class SwiperComponent implements OnInit {
     spaceBetween: 30,
   };
 
-  files$: Observable<image4File[]> = EMPTY;
+  files$: Observable<Netlifile[]> = EMPTY;
 
-  constructor(private imageService: ImagesService) {}
+  private _ngDestroy$ = new Subject<void>();
+
+  constructor(private imageService: ImagesService, private breakpointObserver: BreakpointObserver) {}
+
   ngOnInit(): void {
-    this.files$ = this.imageService.getAlbum('spielgruppe-carousel')?.pipe(map((p) => p.files));
+
+    this.breakpointObserver
+      .observe([
+        Breakpoints.XSmall,
+        Breakpoints.Small,
+        Breakpoints.Medium,
+        Breakpoints.Large,
+        Breakpoints.XLarge,
+      ])
+      .pipe(takeUntil(this._ngDestroy$))
+      .subscribe((result) => {
+        for (const query of Object.keys(result.breakpoints)) {
+          if (result.breakpoints[query]) {
+            const match = query.match('\\(max-width:\\s(\\d+)\\.98px\\)');
+            const width = match?.length ? match[1] : '2048';
+
+            this.files$ = this.imageService.listAssets().pipe(
+              map((p) => {
+                  p.forEach( image => image.path = `https://kinderkultur.ch${image.path}?nf_resize=fit&w=${width}`);
+                  return p;
+                }
+              )
+            )
+            break;
+          }
+        }
+      });
   }
 }

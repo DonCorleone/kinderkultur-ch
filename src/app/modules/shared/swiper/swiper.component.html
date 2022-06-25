@@ -3,9 +3,9 @@
     <ng-container *ngFor="let file of files">
       <div class="swiper-slide">
         <img
-          [src]="'https://cdn.image4.io/petruschka' + file.name"
+          [src]="file.path"
           width="100%"
-          [alt]="file.name"
+          [alt]="file.path"
         />
       </div>
     </ng-container>
