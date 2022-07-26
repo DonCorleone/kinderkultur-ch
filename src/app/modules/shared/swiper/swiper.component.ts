@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { SwiperOptions } from 'swiper';
-import {File as image4File, ImagesService, Netlifile} from 'src/app/services/images.service';
-import {EMPTY, map, Observable, Subject, takeUntil} from 'rxjs';
+import {
+  ImagesService,
+  Netlifile,
+} from 'src/app/services/images.service';
+import { EMPTY, map, Observable, Subject, takeUntil } from 'rxjs';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import {environment} from "../../../../environments/environment";
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-swiper',
@@ -27,10 +30,12 @@ export class SwiperComponent implements OnInit {
 
   private _ngDestroy$ = new Subject<void>();
 
-  constructor(private imageService: ImagesService, private breakpointObserver: BreakpointObserver) {}
+  constructor(
+    private imageService: ImagesService,
+    private breakpointObserver: BreakpointObserver
+  ) {}
 
   ngOnInit(): void {
-
     this.breakpointObserver
       .observe([
         Breakpoints.XSmall,
@@ -48,11 +53,13 @@ export class SwiperComponent implements OnInit {
 
             this.files$ = this.imageService.listAssets().pipe(
               map((p) => {
-                  p.forEach( image => image.path = `${environment.URL}${image.path}?nf_resize=fit&w=${width}`);
-                  return p;
-                }
-              )
-            )
+                p.forEach(
+                  (image) =>
+                    (image.path = `${environment.URL}${image.path}?nf_resize=fit&w=${width}`)
+                );
+                return p;
+              })
+            );
             break;
           }
         }
